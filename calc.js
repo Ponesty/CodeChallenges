@@ -14,8 +14,29 @@ reader.question("What would you like to calculate?", function(input){
 	num1 = Number(tokens[1]);
 	num2 = Number(tokens[2]);
 
+	let answer, answer2;
+	if(mathSymbol == '+'){
+		answer = num1+num2;
+	}
+	else if(mathSymbol == '-'){
+		answer = num1-num2;
+	}
+	else if(mathSymbol == '*'){
+		answer = num1*num2;
+	}
+	else if(mathSymbol == '/'){
+		answer = num1 / num2;
+	}
+	else if(mathSymbol == '√'){
+		answer = Math.sqrt(num1 + num2);
+		//answer2 = Math.sqrt(num2);
+		//console.log(answer , answer2);
+	}
+	console.log(answer);
+
 
 	// This line closes the connection to the command line interface.
-	reader.close()
+	reader.close();
+	
 
 });
