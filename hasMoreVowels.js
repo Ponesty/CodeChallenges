@@ -15,9 +15,9 @@ const hasMoreVowels = (word) => {
         return true;
         
     }
-    else if( cC >= vC){
+    else{
         return false;
     }
 }
 
-console.log(hasMoreVowels('moose'));
+console.log(hasMoreVowels('mice'));
