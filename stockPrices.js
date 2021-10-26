@@ -14,11 +14,11 @@ const best = (arr) => {
         jC++;
     }
     if(profit > 0){
-        return `${profit} buy at $${buy}, sell at $${sell}`;
+        return `${profit} - buy at $${buy}, sell at $${sell}`;
 
     }
     else{
         return profit;
     }
 }
-console.log(best([5, 4 , 3, 2, 1]));
+console.log(best([15, 10, 20, 22, 1, 9]));
